@@ -23,14 +23,16 @@ export default {
     DesktopNav,
   },
   data() {
-    return {
-      side: false,
-    }
+    return {}
   },
-  computed: {},
+  computed: {
+    side() {
+      return this.$store.state.element.side
+    },
+  },
   methods: {
     show() {
-      this.side = true
+      this.$store.commit('element/showNav', true)
     },
   },
 }

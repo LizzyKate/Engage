@@ -10,6 +10,13 @@
     </div>
     <div class="flex flex-col">
       <div class="bg-white lg:hidden flex">
+        <button
+          v-if="side"
+          class="absolute z-10 text-black right-0 p-2"
+          @click="hide"
+        >
+          <i class="fas fa-times text-2xl"></i>
+        </button>
         <MobileNav />
       </div>
       <div class="lg:hidden block bg-gray-200 min-h-screen">
@@ -27,6 +34,17 @@ export default {
     DesktopNav,
     Main,
     MobileNav,
+  },
+  computed: {
+    side() {
+      return this.$store.state.element.side
+    },
+  },
+  methods: {
+    hide() {
+      this.$store.commit('element/showNav', false)
+      console.log('I am clicking')
+    },
   },
 }
 </script>

@@ -1,10 +1,15 @@
 export const state = () => ({
+  side: false,
   elements: [],
   currentComponent: '',
   currentIndex: null,
 })
 
 export const mutations = {
+  showNav(state, payload) {
+    state.side = payload
+  },
+
   setElements(state, payload) {
     state.elements = payload
   },

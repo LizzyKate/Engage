@@ -15,7 +15,7 @@
             class="text-base font-display font-semibold text-default focus:outline-none md:mt-0 mt-8"
             @click="open()"
           >
-            +
+            Add Campaign
           </button>
         </div>
       </div>
