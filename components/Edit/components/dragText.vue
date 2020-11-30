@@ -4,7 +4,11 @@
     class="flex justify-between items-center"
   >
     <!-- props passed inside div tag as props.value to display text being dragged from input.vue file in inner-side-nav -->
-    <div @click="textFormatter" v-html="properties.value || props.value"></div>
+    <div
+      class="cursor-pointer"
+      @click="textFormatter"
+      v-html="properties.value || props.value"
+    ></div>
     <div>
       <button class="focus:outline-none" @click="deleteText">
         <i class="fas fa-trash text-red-600 text-base"></i>

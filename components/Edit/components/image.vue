@@ -7,7 +7,7 @@
     <img
       :src="props.img"
       alt=""
-      class="object-contain resizable-content w-full h-full inline-block"
+      class="object-contain resizable-content w-full h-full inline-block cursor-pointer"
       :style="{
         opacity: properties.opacity,
         width: properties.imageWidth + '%',
