@@ -1,4 +1,4 @@
-# Creating A Campaign Ad Using Drag And Drop To Edit Elements
+<!-- # Creating A Campaign Ad Using Drag And Drop To Edit Elements
 
 This Project implements dragging and dropping and editing of image and text elements.The functionality of this project was only based on the desktop version. The project was setup with Nuxtjs and TailwindCss. The steps carried out in building this project will be explained below.
 
@@ -76,4 +76,4 @@ In the main.vue file of the Edit folder, when the "Save" button is clicked, a fu
 
 ## Viewing Saved Properties In The local storage In The Preview Page
 
-In the preview page, the value(properties in the vuex store) of the key(newCampaign) in the local storage is gotten, the mutation(setElements) in the vuex store(element.js) is called and the value gotten from local storage is assigned as the payload and displayed as properties of elements before mounting through dynamic component binding property of vue. The elements being displayed were imported as ImageComponent and TextComponent from image-preview.vue file and text-preview.vue file of the components folder in the Edit folder.
+In the preview page, the value(properties in the vuex store) of the key(newCampaign) in the local storage is gotten, the mutation(setElements) in the vuex store(element.js) is called and the value gotten from local storage is assigned as the payload and displayed as properties of elements before mounting through dynamic component binding property of vue. The elements being displayed were imported as ImageComponent and TextComponent from image-preview.vue file and text-preview.vue file of the components folder in the Edit folder. -->
